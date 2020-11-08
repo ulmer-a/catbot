@@ -8,8 +8,7 @@ static std::vector<const char*>messages = {
   "Läuft bei dir, %s!",
   "Miau, %s!",
   "%s, gib mir Milchile!",
-  "Hey %s, kannst du mich streicheln?",
-  nullptr
+  "Hey %s, kannst du mich streicheln?"
 };
 
 const std::string getRandomMessage(const std::string& name)
