@@ -27,6 +27,11 @@ cmake ..
 make -j8
 ```
 
+Run it:
+```
+TOKEN=mytoken ./catbot
+```
+
 ## Creating a chat bot
 
 First read Telegram's introduction to Bots at https://core.telegram.org/bots. Then it's time
