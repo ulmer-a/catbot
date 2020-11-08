@@ -18,7 +18,7 @@ void subscribeCommands(TgBot::Bot& bot)
                              message->messageId);
   });
 
-  bot.getEvents().onCommand("buildinfo", [&bot](TgBot::Message::Ptr message) {
+  bot.getEvents().onCommand("version", [&bot](TgBot::Message::Ptr message) {
     bot.getApi().sendMessage(message->chat->id, getVersionInfo().c_str());
   });
 
