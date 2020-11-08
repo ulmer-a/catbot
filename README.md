@@ -3,6 +3,26 @@
 The Telegram cat bot can answer you if you mention her in group chats or write her
 a private message. Furthermore, it can send you random cat pics from a folder on your PC.
 
+## Building the Catbot
+
+```
+sudo apt install g++ make binutils cmake libssl-dev \
+    libboost-system-dev libboost-filesystem-dev lizlib1g-dev
+
+git clone https://github.com/reo7sp/tgbot-cpp
+mkdir tgbot-cpp/build
+cd tgbot-cpp/build
+cmake ..
+make -j8
+sudo make install
+
+git clone https://github.com/ulmer-a/catbot
+mkdir catbot/build
+cd catbot/build
+cmake ..
+make -j8
+```
+
 ## Creating a chat bot
 
 First read Telegram's introduction to Bots at https://core.telegram.org/bots. Then it's time
