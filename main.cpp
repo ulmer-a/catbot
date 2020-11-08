@@ -5,14 +5,14 @@
 
 #include "catbot.h"
 
-int main(int argc, char *argv[])
+int main()
 {
-  if (argc < 2)
+  const char* token = getenv("TOKEN");
+  if (token == nullptr)
   {
-    fprintf(stderr, "usage: catbot <api-key>\n");
+    fprintf(stderr, "usage: api-token environment variable not set!\n");
     return 1;
   }
-  const char *token = argv[1];
 
   srand(time(nullptr));
 
