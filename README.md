@@ -17,10 +17,12 @@ in order to talk with your clients.
 I've used TgBot lib to make the whole thing a little easier, as I didn't want to mess with
 curl and JSON requests directly. There are also other implementations for python & co available.
 
-TgBot lib: https://github.com/reo7sp/tgbot-cpp
+TgBot lib: https://github.com/reo7sp/tgbot-cpp 
 
-I cloned the repo, compiled and installed the library, so I could use it in my own project.
-The samples are very helpful as well.
+I cloned the repo, compiled and installed the library, so I could use it in my own project. There
+are some dependencies though, so make sure to take care of them, too.
+
+The samples in the repu are very helpful as well.
 
 ## Programming the TgBot
 
