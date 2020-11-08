@@ -6,7 +6,7 @@ a private message. Furthermore, it can send you random cat pics from a folder on
 ## Building the Catbot
 
 ```
-sudo apt install g++ make binutils cmake libssl-dev \
+sudo apt install g++ make binutils cmake libssl-dev libcurl4-openssl-dev \
     libboost-system-dev libboost-filesystem-dev lizlib1g-dev
 ```
 
