@@ -25,7 +25,12 @@ static void scanDirectory(const fs::path& root, const std::string& ext)
 const std::string getRandomCatPicPath()
 {
   if (jpgFiles.size() == 0)
+  {
     scanDirectory(".", ".jpg");
+
+    if (jpgFiles.size() == 0)
+      throw std::exception();
+  }
 
   unsigned picsTotal = jpgFiles.size();
   unsigned pic = rand() % picsTotal;
