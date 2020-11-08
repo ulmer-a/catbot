@@ -8,14 +8,18 @@ a private message. Furthermore, it can send you random cat pics from a folder on
 ```
 sudo apt install g++ make binutils cmake libssl-dev \
     libboost-system-dev libboost-filesystem-dev lizlib1g-dev
+```
 
+```
 git clone https://github.com/reo7sp/tgbot-cpp
 mkdir tgbot-cpp/build
 cd tgbot-cpp/build
 cmake ..
 make -j8
 sudo make install
+```
 
+```
 git clone https://github.com/ulmer-a/catbot
 mkdir catbot/build
 cd catbot/build
