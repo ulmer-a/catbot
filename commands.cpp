@@ -18,6 +18,10 @@ void subscribeCommands(TgBot::Bot& bot)
                              message->messageId);
   });
 
+  bot.getEvents().onCommand("buildinfo", [&bot](TgBot::Message::Ptr message) {
+    bot.getApi().sendMessage(message->chat->id, getVersionInfo().c_str());
+  });
+
   bot.getEvents().onCommand("millipic", [&bot](TgBot::Message::Ptr message) {
     try {
       auto file = TgBot::InputFile::fromFile(getRandomCatPicPath(), "image/jpg");
